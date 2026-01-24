@@ -1,5 +1,8 @@
+*{
+    scroll-behavior: smooth;
+}
 /* ========== Header Section =============  */
-header{
+header {
     z-index: 99;
 }
 
@@ -20,8 +23,8 @@ header{
 
 /* =========== Hero Section ============== */
 
-#hero_section{
-    background-color:#F9F9FF;
+#hero_section {
+    background-color: #F9F9FF;
 
 }
 
@@ -53,24 +56,163 @@ header{
 /* =========== Hero Section ============== */
 
 /* =========== Details Section ============== */
-#details_sec .container .row .cold a{
+#details_sec .container .row .cold a {
     color: white;
-     background: #8390FF;
-    background: linear-gradient(90deg, rgba(131, 144, 255, 1) 0%, rgba(98, 188, 252, 1) 100%);
-    ;
-}
-/* =========== Details Section ============== */
-
-/* =========== Counter Section ============== */
-#counter_sec{
     background: #8390FF;
     background: linear-gradient(90deg, rgba(131, 144, 255, 1) 0%, rgba(98, 188, 252, 1) 100%);
     ;
-   
+}
+
+/* =========== Details Section ============== */
+
+/* =========== Services Section ==============  */
+.col_serv:hover .ser_icon i {
+    background: #8390FF;
+    background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.col_serv:hover .ser_head {
+    background: #8390FF;
+    background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+/* =========== Services Section ==============  */
+
+/* =========== Counter Section ============== */
+#counter_sec {
+    background: #8390FF;
+    background: linear-gradient(90deg, rgba(131, 144, 255, 1) 0%, rgba(98, 188, 252, 1) 100%);
+    ;
+
     color: white;
 }
 
-#counter_sec .container .row{
- min-height: 300px;
+#counter_sec .container .row {
+    min-height: 300px;
 }
+
 /* =========== Counter Section ============== */
+
+/* =========== Carosuel Section ============== */
+#carousel_section {
+    min-height: 300px;
+    padding: 100px 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========== Carosuel Section ============== */
+
+/*  =========== Pricing Section ============== */
+#price_sec {
+    padding: 100px 0px;
+}
+
+.price_card {
+    transition: all 0.2s ease;
+
+}
+
+.price_card:hover {
+    background: #8390FF;
+    background: linear-gradient(90deg, rgba(131, 144, 255, 1) 0%, rgba(98, 188, 252, 1) 100%);
+    ;
+    scale: 1.1;
+    color: rgb(224, 224, 224);
+
+}
+
+.no_div {
+    width: 140px;
+    height: 142px;
+    border: 30px solid rgba(62, 77, 184, 0.1);
+    border-radius: 50%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(132, 144, 255, 0.1);
+}
+
+.mid_part p {
+    margin: 0px !important;
+    font-size: large;
+}
+
+/*  =========== Pricing Section ============== */
+
+/* =========== Blog Section ============== */
+#blog_sec {
+    padding: 100px 0px;
+}
+
+.blog_parent:hover .img_parent img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.blog_parent:hover .blog_para .para_head h5 {
+    background: #8390FF;
+    background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.img_parent {
+    overflow: hidden;
+}
+
+.img_parent img {
+    transition: all 0.1s ease;
+}
+
+/* =========== Blog Section ============== */
+
+/* =========== SVG Section ============== */
+#svg_sec {
+    background: #8390FF;
+    background: linear-gradient(90deg, rgba(131, 144, 255, 1) 0%, rgba(98, 188, 252, 1) 100%);
+    ;
+    min-height: 250px;
+    padding: 80px 0px !important;
+}
+
+/* =========== SVG Section ============== */
+
+/* =========== Footer Section ============== */
+#footer_sec{
+    background-color: #04091E;
+    min-height: 40px;
+    padding: 100px 0px;
+    color: white;
+}
+.footer_mail{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.fb:hover{
+    color:#8390FF !important ; 
+
+}
+.tw:hover{
+    color:#8390FF !important ; 
+
+}
+.wt:hover{
+    color:#8390FF !important ; 
+
+}
+/* =========== Footer Section ============== */
