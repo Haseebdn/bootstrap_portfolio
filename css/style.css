@@ -1,6 +1,7 @@
-*{
+* {
     scroll-behavior: smooth;
 }
+
 /* ========== Header Section =============  */
 header {
     z-index: 99;
@@ -8,6 +9,7 @@ header {
 
 .nav-link {
     color: black;
+    transition: all 0.2s ease;
 
 }
 
@@ -17,6 +19,12 @@ header {
 
 .nav-item {
     padding: 5px 7px;
+}
+
+.navbar-toggler:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+
 }
 
 /* ========== Header Section =============  */
@@ -66,6 +74,11 @@ header {
 /* =========== Details Section ============== */
 
 /* =========== Services Section ==============  */
+
+.col_serv {
+    transition: all 0.3s ease !important;
+}
+
 .col_serv:hover .ser_icon i {
     background: #8390FF;
     background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
@@ -96,7 +109,7 @@ header {
 }
 
 #counter_sec .container .row {
-    min-height: 300px;
+    min-height: auto;
 }
 
 /* =========== Counter Section ============== */
@@ -104,18 +117,23 @@ header {
 /* =========== Carosuel Section ============== */
 #carousel_section {
     min-height: 300px;
-    padding: 100px 0px !important;
+    /* padding: 100px 0px !important; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#carousel_section .yak {
+    font-size: 14px;
+    padding-left: 2px;
+}
+
 /* =========== Carosuel Section ============== */
 
 /*  =========== Pricing Section ============== */
 #price_sec {
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
 }
 
 .price_card {
@@ -130,6 +148,10 @@ header {
     scale: 1.1;
     color: rgb(224, 224, 224);
 
+}
+
+.price_card:hover .lower_part a {
+    color: white;
 }
 
 .no_div {
@@ -153,7 +175,7 @@ header {
 
 /* =========== Blog Section ============== */
 #blog_sec {
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
 }
 
 .blog_parent:hover .img_parent img {
@@ -191,28 +213,32 @@ header {
 /* =========== SVG Section ============== */
 
 /* =========== Footer Section ============== */
-#footer_sec{
+#footer_sec {
     background-color: #04091E;
     min-height: 40px;
     padding: 100px 0px;
     color: white;
 }
-.footer_mail{
+
+.footer_mail {
     outline: none;
     border: none;
     border-radius: 4px;
 }
 
-.fb:hover{
-    color:#8390FF !important ; 
+.fb:hover {
+    color: #8390FF !important;
 
 }
-.tw:hover{
-    color:#8390FF !important ; 
+
+.tw:hover {
+    color: #8390FF !important;
 
 }
-.wt:hover{
-    color:#8390FF !important ; 
+
+.wt:hover {
+    color: #8390FF !important;
 
 }
+
 /* =========== Footer Section ============== */
