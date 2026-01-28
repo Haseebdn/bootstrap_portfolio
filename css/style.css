@@ -21,9 +21,10 @@ header {
     padding: 5px 7px;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler {
     outline: 0 !important;
     box-shadow: none !important;
+    border: none !important;
 
 }
 
@@ -74,11 +75,6 @@ header {
 /* =========== Details Section ============== */
 
 /* =========== Services Section ==============  */
-
-.col_serv {
-    transition: all 0.3s ease !important;
-}
-
 .col_serv:hover .ser_icon i {
     background: #8390FF;
     background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
@@ -93,8 +89,11 @@ header {
     background: linear-gradient(to right, #8390FF 0%, #62BCFC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
-
+.ser_icon i,
+.ser_head {
+    transition: all 0.3s ease !important;
 }
 
 /* =========== Services Section ==============  */
@@ -128,6 +127,8 @@ header {
     font-size: 14px;
     padding-left: 2px;
 }
+
+
 
 /* =========== Carosuel Section ============== */
 
@@ -174,8 +175,16 @@ header {
 /*  =========== Pricing Section ============== */
 
 /* =========== Blog Section ============== */
-#blog_sec {
-    /* padding: 100px 0px; */
+.img_parent {
+    overflow: hidden;
+}
+
+.img_parent img {
+    transition: all 0.3s ease;
+}
+
+.blog_parent .blog_para .para_head h5 {
+    transition: all 0.3s ease;
 }
 
 .blog_parent:hover .img_parent img {
@@ -189,14 +198,6 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-}
-
-.img_parent {
-    overflow: hidden;
-}
-
-.img_parent img {
-    transition: all 0.1s ease;
 }
 
 /* =========== Blog Section ============== */
@@ -242,3 +243,44 @@ header {
 }
 
 /* =========== Footer Section ============== */
+
+@media (max-width:768px) {
+    .about_image {
+        order: 2;
+    }
+
+    #footer_sec .container .row .col-lg-5,
+    #footer_sec .container .row .col-lg-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    #footer_sec .container .row .col-lg-5 .email_ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width:425px) {
+    #hero_section .container .row .colu a {
+        width: 75% !important;
+    }
+}
+
+@media (max-width:375px) {
+    .carousel-control-next, .carousel-control-prev{
+    bottom: 10px !important;
+    top: auto !important;
+}
+
+.caro_row{
+    width: 92% !important;
+}
+}
