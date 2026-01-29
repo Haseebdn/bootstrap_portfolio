@@ -275,12 +275,20 @@ header {
 }
 
 @media (max-width:375px) {
-    .carousel-control-next, .carousel-control-prev{
-    bottom: 10px !important;
-    top: auto !important;
-}
 
-.caro_row{
-    width: 92% !important;
-}
+    .carousel-control-next,
+    .carousel-control-prev {
+        bottom: 10px !important;
+        top: auto !important;
+    }
+
+    .caro_row {
+        width: 92% !important;
+    }
+
+    #blog_sec .container{
+        padding: 24px 0px 0px 0px !important;
+    }
+
+    
 }
